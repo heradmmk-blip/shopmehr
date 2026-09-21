@@ -2626,7 +2626,7 @@ async function searchPexelsImages(query){
 async function callOpenAI(prompt){
   var res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
-    headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key},
+    headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key, 'HTTP-Referer': window.location.origin, 'X-Title': 'Larmarket'},
     body: JSON.stringify({
       model: aiCfg.model || 'gpt-4o-mini',
       messages: [
@@ -2645,7 +2645,7 @@ async function callOpenAI(prompt){
 async function callOpenAIWithImage(base64, prompt){
   var res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
-    headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key},
+    headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key, 'HTTP-Referer': window.location.origin, 'X-Title': 'Larmarket'},
     body: JSON.stringify({
       model: 'gpt-4o-mini',
       messages: [{
@@ -2942,7 +2942,7 @@ async function aiReply(t){
   try{
     var r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key},
+      headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key, 'HTTP-Referer': window.location.origin, 'X-Title': 'Larmarket'},
       body: JSON.stringify({
         model: aiCfg.model || 'gpt-4o-mini',
         messages: [{role: 'system', content: 'دستیار فروشگاه ' + shopInfo.brand + '. پاسخ کوتاه و گرم فارسی.'}, {role: 'user', content: t}],
