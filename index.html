@@ -3,13 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="لرمارکت - فروشگاه آنلاین با کیفیت">
-<meta name="keywords" content="فروشگاه, آنلاین, خرید, لرمارکت">
 <meta name="theme-color" content="#EA580C">
-<meta property="og:title" content="لرمارکت | تازه، سریع، به‌صرفه">
-<meta property="og:description" content="فروشگاه آنلاین خوراکی، مواد غذایی و لوازم بهداشتی">
-<meta property="og:type" content="website">
-<link rel="manifest" href='data:application/json,{"name":"لرمارکت","short_name":"لرمارکت","start_url":".","display":"standalone","background_color":"#FDF8F3","theme_color":"#EA580C"}'>
+<meta name="description" content="لرمارکت - فروشگاه آنلاین با کیفیت">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 <title>لرمارکت | تازه، سریع، به‌صرفه</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
@@ -25,8 +20,6 @@ a{color:inherit;text-decoration:none}
 button,input,select,textarea{font-family:inherit;color:inherit}
 .hidden{display:none!important}
 img{max-width:100%;display:block}
-
-/* HEADER */
 header{position:sticky;top:0;z-index:50;background:var(--header-bg);border-bottom:1px solid var(--border);transition:background var(--transition)}
 .top-bar{background:repeating-linear-gradient(90deg,#1c1c1c 0,#1c1c1c 5px,#e8d9a8 5px,#e8d9a8 9px,#2a2a2a 9px,#2a2a2a 11px,#f2e6bd 11px,#f2e6bd 15px,#2a2a2a 15px,#2a2a2a 17px,#e8d9a8 17px,#e8d9a8 21px);color:#1a1a1a;font-size:.82rem;font-weight:bold;text-align:center;padding:11px 12px;box-shadow:inset 0 6px 14px rgba(0,0,0,.55),inset 0 -6px 14px rgba(0,0,0,.55)}
 .top-bar-text{display:inline-block;background:linear-gradient(180deg,#faf0d2,#e8d9a8);color:#1a1a1a;padding:4px 16px;border-radius:4px;border:1px solid #1a1a1a;box-shadow:0 0 0 1px #c99843,0 2px 6px rgba(0,0,0,.45)}
@@ -44,7 +37,7 @@ header{position:sticky;top:0;z-index:50;background:var(--header-bg);border-botto
 .search-suggest .item:hover{background:var(--input-bg)}
 .search-suggest .item img{width:34px;height:34px;border-radius:8px;object-fit:cover}
 .actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.btn{border:none;background:var(--primary);color:#fff;padding:9px 15px;border-radius:999px;cursor:pointer;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;transition:background var(--transition),transform .15s;position:relative;overflow:hidden}
+.btn{border:none;background:var(--primary);color:#fff;padding:9px 15px;border-radius:999px;cursor:pointer;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;transition:background var(--transition),transform .15s}
 .btn:hover{background:var(--primary-dark);transform:translateY(-1px)}
 .btn:active{transform:translateY(0)}
 .btn:disabled{opacity:.6;cursor:not-allowed}
@@ -61,8 +54,6 @@ nav.cats{border-top:1px solid var(--border);background:var(--header-bg)}
 .cats-inner button{border:1px solid transparent;background:transparent;padding:8px 14px;border-radius:999px;cursor:pointer;font-size:.88rem;color:var(--muted);white-space:nowrap;transition:all var(--transition)}
 .cats-inner button.active{color:var(--primary);background:rgba(234,88,12,.12)}
 .cats-inner button:hover{color:var(--primary);background:rgba(234,88,12,.08)}
-
-/* MAIN */
 main{max-width:1300px;margin:0 auto 40px;padding:0 20px;min-height:50vh}
 .page{display:none}
 .page.active{display:block;animation:fadeUp .35s ease}
@@ -71,7 +62,6 @@ main{max-width:1300px;margin:0 auto 40px;padding:0 20px;min-height:50vh}
 .section-title h3{margin:0;font-size:1.05rem}
 .section-title span{color:var(--muted);font-size:.85rem}
 .hero-inner{background:linear-gradient(135deg,var(--primary),#FB923C);border-radius:20px;color:#fff;padding:40px 30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:20px;position:relative;overflow:hidden}
-.hero-inner::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.15),transparent 60%);pointer-events:none}
 .hero-text h2{margin:0 0 10px;font-size:1.6rem;position:relative;z-index:1}
 .hero-text p{margin:0 0 16px;opacity:.95;position:relative;z-index:1}
 .hero-text .btn{background:#fff;color:var(--primary-dark);position:relative;z-index:1}
@@ -101,13 +91,9 @@ main{max-width:1300px;margin:0 auto 40px;padding:0 20px;min-height:50vh}
 .feature .ic{font-size:1.8rem;margin-bottom:6px}
 .feature h5{margin:0 0 4px;font-size:.9rem}
 .feature p{margin:0;font-size:.78rem;color:var(--muted)}
-
-/* FILTERS */
 .filters-bar{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .filters-bar select,.filters-bar input{padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--input-bg);color:var(--text);outline:none;font-size:.85rem}
 .filters-bar label{font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:4px;cursor:pointer}
-
-/* FORM */
 .form-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;max-width:480px;margin:26px auto}
 .form-box h3{margin:0 0 14px}
 .form-group{margin-bottom:12px}
@@ -117,9 +103,7 @@ main{max-width:1300px;margin:0 auto 40px;padding:0 20px;min-height:50vh}
 .form-box .btn{width:100%;justify-content:center}
 .form-switch{text-align:center;margin-top:10px;font-size:.88rem;color:var(--muted)}
 .form-switch a{color:var(--primary);cursor:pointer;font-weight:bold}
-
-/* PRODUCT DETAIL */
-.detail{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-top:16px;animation:fadeUp .35s ease}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-top:16px}
 .detail .thumb{background:var(--input-bg);border-radius:14px;aspect-ratio:1/1;display:grid;place-items:center;font-size:6rem}
 .detail h2{margin:0 0 8px}
 .detail .price{font-size:1.5rem;font-weight:bold;color:var(--primary-dark);margin:14px 0}
@@ -131,8 +115,6 @@ main{max-width:1300px;margin:0 auto 40px;padding:0 20px;min-height:50vh}
 .product-gallery .thumbs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
 .product-gallery .thumbs img{width:60px;height:60px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:border-color var(--transition)}
 .product-gallery .thumbs img.active{border-color:var(--primary)}
-
-/* ADMIN */
 .dash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:20px}
 .stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:transform var(--transition),box-shadow var(--transition)}
 .stat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
@@ -150,10 +132,9 @@ table.tbl tr:hover{background:var(--input-bg)}
 .tag.success{background:rgba(22,163,74,.15);color:var(--accent)}
 .image-upload-box{background:var(--input-bg);border:2px dashed var(--border);border-radius:14px;padding:16px;text-align:center;transition:border-color var(--transition),background var(--transition)}
 .image-upload-box:hover{border-color:var(--primary)}
-.image-thumb-item{position:relative;background:var(--input-bg);border-radius:10px;padding:6px;text-align:center;animation:cardIn .3s ease both}
+.image-thumb-item{position:relative;background:var(--input-bg);border-radius:10px;padding:6px;text-align:center}
 .image-thumb-item img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
-.image-thumb-item .remove-btn{position:absolute;top:4px;left:4px;background:var(--danger);color:#fff;border:none;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:.9rem;display:grid;place-items:center;transition:transform .2s}
-.image-thumb-item .remove-btn:hover{transform:scale(1.15)}
+.image-thumb-item .remove-btn{position:absolute;top:4px;left:4px;background:var(--danger);color:#fff;border:none;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:.9rem;display:grid;place-items:center}
 .image-thumb-item .main-tag{position:absolute;bottom:4px;right:4px;background:var(--accent);color:#fff;font-size:.68rem;padding:2px 6px;border-radius:6px}
 .chart-wrap{position:relative;height:280px;width:100%}
 .upload-progress{background:var(--input-bg);border-radius:999px;height:8px;overflow:hidden;margin-top:8px;display:none}
@@ -175,26 +156,20 @@ table.tbl tr:hover{background:var(--input-bg)}
 .track-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:14px}
 .track-search{display:flex;gap:8px;flex-wrap:wrap}
 .track-search input{flex:1;min-width:200px;padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--input-bg);color:var(--text);outline:none;font-family:monospace;letter-spacing:1px;font-size:1rem}
-
-/* ABOUT & FAQ */
 .about-hero{background:linear-gradient(135deg,var(--primary),#FB923C);color:#fff;border-radius:20px;padding:36px 30px;text-align:center;margin-top:20px}
 .about-hero h1{margin:0 0 10px;font-size:1.8rem}
 .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:20px 0}
 .about-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center}
 .about-card .ic{font-size:2rem;margin-bottom:8px}
-.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:10px;cursor:pointer;transition:background var(--transition)}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:10px;cursor:pointer}
 .faq-item summary{font-weight:bold;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
 .faq-item summary::-webkit-details-marker{display:none}
 .faq-item summary::after{content:'➕';font-size:.8rem;color:var(--primary)}
 .faq-item[open] summary::after{content:'➖'}
 .faq-item p{color:var(--muted);margin:10px 0 0;font-size:.9rem}
-
-/* GALLERY */
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
 .gallery-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;cursor:pointer;transition:transform var(--transition)}
 .gallery-grid img:hover{transform:scale(1.03)}
-
-/* FOOTER */
 footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .footer-inner{max-width:1300px;margin:0 auto;padding:36px 20px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
 .footer-inner h4{color:var(--primary);margin:0 0 10px;font-size:.92rem}
@@ -202,8 +177,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .footer-inner ul li{margin-bottom:6px;cursor:pointer;transition:color var(--transition)}
 .footer-inner ul li:hover{color:var(--primary)}
 .copy{border-top:1px solid rgba(255,255,255,.08);text-align:center;padding:12px;font-size:.78rem;opacity:.7}
-
-/* CART */
 .cart-panel{position:fixed;top:0;left:0;width:min(380px,92vw);height:100%;background:var(--card);box-shadow:4px 0 24px rgba(0,0,0,.15);transform:translateX(-100%);transition:transform .3s;z-index:100;display:flex;flex-direction:column}
 .cart-panel.open{transform:translateX(0)}
 .cart-header{display:flex;justify-content:space-between;align-items:center;padding:14px;border-bottom:1px solid var(--border)}
@@ -215,11 +188,8 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .3s;z-index:90}
 .overlay.show{opacity:1;pointer-events:auto}
 .empty-cart{text-align:center;color:var(--muted);padding:50px 20px}
-.empty-cart .big{font-size:3rem}
 .ship-info{background:var(--input-bg);border-radius:10px;padding:10px;font-size:.82rem;margin-bottom:10px;border:1px solid var(--border)}
 .ship-info .row{display:flex;justify-content:space-between;padding:3px 0}
-
-/* MODAL */
 .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:200;padding:20px;background:rgba(0,0,0,.5)}
 .modal.open{display:flex}
 .modal-box{background:var(--card);border-radius:var(--radius);padding:22px;max-width:440px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.3);position:relative;max-height:90vh;overflow-y:auto;animation:modalIn .25s ease}
@@ -231,8 +201,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .detail-row .meta{font-size:.78rem;color:var(--muted)}
 .detail-row .amount{color:var(--primary-dark);font-weight:bold;white-space:nowrap;padding-left:10px}
 .empty-detail{text-align:center;padding:30px;color:var(--muted)}
-
-/* TOAST */
 #toastContainer{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:1000;display:flex;flex-direction:column;gap:8px;pointer-events:none;width:min(400px,90vw)}
 .toast{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 16px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px;font-size:.88rem;animation:toastIn .3s ease;pointer-events:auto}
 @keyframes toastIn{from{transform:translateY(-20px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -242,11 +210,9 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .toast.error{border-left:4px solid var(--danger)}
 .toast.warning{border-left:4px solid var(--warning)}
 .toast.info{border-left:4px solid var(--primary)}
-
-/* CHAT */
 #chatFab{position:fixed;bottom:20px;left:20px;z-index:120;width:56px;height:56px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.6rem;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform var(--transition)}
 #chatFab:hover{transform:scale(1.08)}
-#chatBox{position:fixed;bottom:90px;left:20px;z-index:120;width:min(360px,92vw);height:500px;background:var(--card);border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.3);display:none;flex-direction:column;overflow:hidden;animation:fadeUp .3s ease}
+#chatBox{position:fixed;bottom:90px;left:20px;z-index:120;width:min(360px,92vw);height:500px;background:var(--card);border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.3);display:none;flex-direction:column;overflow:hidden}
 #chatBox.open{display:flex}
 .chat-head{background:var(--primary);color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;font-size:.9rem}
 .chat-head button{background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer}
@@ -257,8 +223,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .chat-foot{display:flex;gap:6px;padding:10px;border-top:1px solid var(--border)}
 .chat-foot input{flex:1;padding:9px 12px;border:1px solid var(--border);border-radius:999px;outline:none;font-size:.85rem;background:var(--input-bg);color:var(--text)}
 .chat-foot button{background:var(--primary);color:#fff;border:none;border-radius:999px;padding:0 16px;cursor:pointer}
-
-/* MISC */
 #scrollTop{position:fixed;bottom:20px;right:20px;z-index:110;width:48px;height:48px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s}
 #scrollTop.show{opacity:1;pointer-events:auto}
 #scrollTop:hover{transform:translateY(-3px)}
@@ -277,15 +241,7 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 .url-scrape-box h5{margin:0 0 8px;color:var(--primary);font-size:.95rem}
 .url-scrape-input{display:flex;gap:8px;flex-wrap:wrap}
 .url-scrape-input input{flex:1;min-width:200px;padding:11px 14px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:var(--text);outline:none;font-size:.88rem;direction:ltr}
-
-@media(max-width:600px){
-  .hero-inner{padding:26px 20px;text-align:center;justify-content:center}
-  .hero-emoji{display:none}
-  .search{order:3;width:100%}
-  .header-main{padding:10px 14px}
-  main{padding:0 14px}
-  .cats-inner{padding:8px 14px}
-}
+@media(max-width:600px){.hero-inner{padding:26px 20px;text-align:center;justify-content:center}.hero-emoji{display:none}.search{order:3;width:100%}.header-main{padding:10px 14px}main{padding:0 14px}.cats-inner{padding:8px 14px}}
 </style>
 </head>
 <body>
@@ -321,7 +277,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
       <div class="hero-text"><h2 id="heroTitle">تازه، سریع، به‌صرفه 🌿</h2><p>محصولات متنوع — با کیفیت درجه یک</p><button class="btn" onclick="scrollToProducts()">مشاهده محصولات</button></div>
       <div class="hero-emoji">🌿🛍️🧺</div>
     </div>
-
     <div class="filters-bar" id="filtersBar">
       <select id="sortSelect">
         <option value="new">جدیدترین</option>
@@ -336,15 +291,11 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
       <input id="filterMaxPrice" type="number" placeholder="تا قیمت" style="width:110px">
       <button class="btn btn-sm btn-outline" onclick="clearFilters()">✖️ پاک کردن</button>
     </div>
-
     <div class="section-title" id="productsSection"><h3>محصولات</h3><span id="resultCount"></span></div>
     <div id="products" class="grid"></div>
     <div id="emptyState" class="empty-box" style="display:none;"><div class="big">📦</div><h4>هنوز محصولی نیست</h4></div>
     <div id="pagination" class="pagination"></div>
-    <div id="loadMoreWrap" style="text-align:center;margin-top:20px;display:none;">
-      <button class="btn" id="loadMoreBtn">نمایش بیشتر</button>
-    </div>
-
+    <div id="loadMoreWrap" style="text-align:center;margin-top:20px;display:none;"><button class="btn" id="loadMoreBtn">نمایش بیشتر</button></div>
     <div class="features">
       <div class="feature"><div class="ic">🚚</div><h5>ارسال سریع</h5><p>تحویل درب منزل</p></div>
       <div class="feature"><div class="ic">✅</div><h5>ضمانت اصالت</h5><p>تضمین کیفیت</p></div>
@@ -392,7 +343,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
     <details class="faq-item"><summary>هزینه ارسال چقدره؟</summary><p>هزینه ارسال بر اساس مبلغ سفارش و منطقه محاسبه می‌شه. سفارش‌های بالای مبلغ مشخص، ارسال رایگان دارن.</p></details>
     <details class="faq-item"><summary>چطور سفارشم رو پیگیری کنم؟</summary><p>از بخش «پیگیری سفارش» در فوتر، کد ۸ رقمی سفارش رو وارد کن تا وضعیتش رو ببینی.</p></details>
     <details class="faq-item"><summary>امکان مرجوعی وجود داره؟</summary><p>بله، تا ۷ روز پس از دریافت، در صورت وجود مشکل، امکان مرجوعی هست.</p></details>
-    <details class="faq-item"><summary>چطور از تخفیف‌ها باخبر بشم؟</summary><p>کدهای تخفیف فعال در بخش سبد خرید نمایش داده می‌شن. برای اطلاع از تخفیف‌های ویژه، عضو سایت شو.</p></details>
     <details class="faq-item"><summary>روش‌های پرداخت چیست؟</summary><p>در حال حاضر از طریق درگاه‌های بانکی معتبر پرداخت آنلاین امکان‌پذیره.</p></details>
   </section>
 
@@ -417,7 +367,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
       <p>۲. امکان لغو سفارش تا ۲ ساعت وجود دارد.</p>
       <p>۳. کالای معیوب تا ۷ روز مرجوعی دارد.</p>
       <p>۴. اطلاعات کاربران نزد فروشگاه محفوظ است.</p>
-      <p>۵. کدهای تخفیف فقط یک‌بار برای هر کاربر معتبر هستند.</p>
     </div>
   </section>
 
@@ -565,7 +514,6 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 
     <div class="panel">
       <h4>🖼️ مدیریت بنر و اسلایدر</h4>
-      <p style="font-size:.85rem;color:var(--muted);margin-bottom:10px;">آدرس عکس بنر یا ایموجی رو وارد کن</p>
       <div class="form-group"><label>بنر صفحه اصلی (URL یا ایموجی)</label><input id="bannerUrl" placeholder="🌿 یا https://..."></div>
       <div class="form-group"><label>متن بنر</label><input id="bannerText" placeholder="متن روی بنر"></div>
       <button class="btn" onclick="saveBanner()">💾 ذخیره بنر</button>
@@ -662,15 +610,16 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
     </div>
 
     <div class="panel">
-      <h4>🤖 اتصال به OpenAI</h4>
-      <div class="form-group"><label>کلید API</label><input id="aiKey" placeholder="sk-..."></div>
+      <h4>🤖 اتصال به Google Gemini</h4>
+      <p style="font-size:.85rem;color:var(--muted);margin-bottom:10px;">برای استفاده از AI، کلید Gemini رو از <a href="https://aistudio.google.com" target="_blank" style="color:var(--primary);font-weight:bold;">aistudio.google.com</a> بگیر (رایگان).</p>
+      <div class="form-group"><label>کلید API Gemini</label><input id="aiKey" placeholder="AIza..."></div>
       <div class="form-group"><label>مدل Gemini</label>
-  <select id="aiModel">
-    <option value="gemini-2.0-flash">Gemini 2.0 Flash (سریع‌ترین)</option>
-    <option value="gemini-1.5-flash">Gemini 1.5 Flash (متعادل)</option>
-    <option value="gemini-1.5-pro">Gemini 1.5 Pro (قوی‌ترین)</option>
-  </select>
-</div>
+        <select id="aiModel">
+          <option value="gemini-2.0-flash">Gemini 2.0 Flash (سریع‌ترین)</option>
+          <option value="gemini-1.5-flash">Gemini 1.5 Flash (متعادل)</option>
+          <option value="gemini-1.5-pro">Gemini 1.5 Pro (قوی‌ترین)</option>
+        </select>
+      </div>
       <button class="btn" onclick="saveAI()">💾 ذخیره</button>
       <p id="aiStatus" style="font-size:.8rem;color:var(--muted);margin-top:8px;"></p>
     </div>
@@ -811,23 +760,21 @@ footer{background:#1F1508;color:#d1d5db;margin-top:40px}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 /* ═══════════════════════════════════════════════════════════
-   لرمارکت — JS کامل
+   لرمارکت — JS کامل با Google Gemini
    ═══════════════════════════════════════════════════════════ */
 
-/* ─── CONFIG ─── */
 var CONFIG = {
-  brandName: 'لرمارکت',
-  slogan: 'تازه، سریع، به‌صرفه',
-  defaultAdminPass: 'mehrshop123',
-  imageBucket: 'products',
-  imageMaxSize: 900,
-  imageQuality: 0.85,
-  defaultShipCost: 30000,
-  defaultFreeShipOver: 500000
+  brandName:'لرمارکت',
+  slogan:'تازه، سریع، به‌صرفه',
+  defaultAdminPass:'mehrshop123',
+  imageBucket:'products',
+  imageMaxSize:900,
+  imageQuality:0.85,
+  defaultShipCost:30000,
+  defaultFreeShipOver:500000
 };
 var ADMIN_EMAILS = ['admin@larmarket.ir','heradmmk@gmail.com','heradmmk@gmil.com'];
 
-/* ─── STATE ─── */
 var sb = null, dbConnected = false;
 var products = [], orders = [], coupons = [], categories = [], reviews = [], reviewsByProduct = {}, addresses = [], notifications = [];
 var cart = loadLS('mehr_cart', {});
@@ -854,7 +801,6 @@ var salesChartInstance = null, viewsChartInstance = null;
 var aiGenData = {images: [], selectedImages: []};
 var currentViewingOrder = null;
 
-/* ─── UTILS ─── */
 function $(id){ return document.getElementById(id); }
 function fmt(n){ return Number(n||0).toLocaleString('fa-IR'); }
 function loadLS(k, d){ try{ var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
@@ -902,7 +848,6 @@ var STATUS_LABELS = {
   cancelled: {label:'لغو شده', icon:'❌', cls:'status-cancelled'}
 };
 
-/* ─── SUPABASE INIT ─── */
 function initSupabase(){
   if(supabaseCfg.url && supabaseCfg.key && window.supabase){
     try{
@@ -914,7 +859,6 @@ function initSupabase(){
   return false;
 }
 
-/* ─── AUTH ─── */
 function isAdmin(){
   if(!user || !user.email) return false;
   var e = String(user.email).toLowerCase().trim();
@@ -1008,7 +952,6 @@ function updateAuthUI(){
   if(l) l.style.display = isAdmin() ? '' : 'none';
 }
 
-/* ─── NOTIFICATIONS ─── */
 function addNotif(text, type){
   notifications.unshift({text: text, type: type || 'info', date: new Date().toLocaleString('fa-IR'), read: false});
   if(notifications.length > 50) notifications = notifications.slice(0, 50);
@@ -1044,7 +987,6 @@ function toggleNotifs(){
 }
 function closeNotifModal(){ $('notifModal').classList.remove('open'); }
 
-/* ─── DATA LOAD ─── */
 async function dbLoadAll(){
   if(!sb) return;
   try{
@@ -1079,7 +1021,6 @@ async function loadUserOrders(){
   return r.data || [];
 }
 
-/* ─── IMAGES ─── */
 function compressImage(file){
   return new Promise(function(res, rej){
     if(!file.type || file.type.indexOf('image/') !== 0){ rej(new Error('عکس نیست')); return; }
@@ -1167,7 +1108,6 @@ function addImageByUrl(){
   renderImagesGrid();
 }
 
-/* ─── DB CRUD ─── */
 async function dbInsertProduct(p){
   if(!sb){ showToast('دیتابیس نیست', 'error'); return false; }
   var r = await sb.from('products').insert(p).select();
@@ -1226,7 +1166,6 @@ async function dbDeleteCategory(id){
   categories = categories.filter(function(c){ return c.id !== id; });
 }
 
-/* ─── SHOP INFO ─── */
 function applyShopInfo(){
   var s = shopInfo;
   $('brandName').textContent = s.brand || 'فروشگاه';
@@ -1246,16 +1185,6 @@ function applyShopInfo(){
   $('abTitle').textContent = '🌿 درباره ' + (s.brand || '');
   $('abSlogan').textContent = s.slogan || '';
   $('abStory').textContent = s.story || '';
-  if(banner.url){
-    var hero = document.querySelector('.hero-inner');
-    if(hero){
-      if(banner.url.indexOf('http') === 0){
-        hero.style.backgroundImage = 'url(' + banner.url + ')';
-        hero.style.backgroundSize = 'cover';
-        hero.style.backgroundPosition = 'center';
-      }
-    }
-  }
 }
 function saveShopInfo(){
   shopInfo = {
@@ -1292,7 +1221,6 @@ function saveBanner(){
   showToast('بنر ذخیره شد', 'success');
 }
 
-/* ─── NAVIGATION ─── */
 function go(page){
   if((page === 'account' || page === 'addresses' || page === 'my-orders') && !user){ openAuth(); return; }
   if(page === 'adminLogin' || page === 'admin'){
@@ -1329,7 +1257,6 @@ function renderGallery(){
   }).join('');
 }
 
-/* ─── CATEGORIES ─── */
 function renderCategories(){
   var h = '<button class="' + (activeCat === 'همه' ? 'active' : '') + '" data-cat="همه">🌐 همه</button>';
   categories.forEach(function(c){
@@ -1362,7 +1289,6 @@ function renderProductCatOptions(){
   }).join('');
 }
 
-/* ─── PRODUCTS ─── */
 function getProductImages(p){
   if(Array.isArray(p.images) && p.images.length) return p.images;
   if(p.image) return [p.image];
@@ -1557,7 +1483,6 @@ function renderSimilarProducts(p){
   }).join('');
 }
 
-/* ─── REVIEWS ─── */
 function renderReviews(id){
   var l = (reviewsByProduct[id] || []).filter(function(r){ return r.approved !== false; });
   if(!l.length){ $('reviewsList').innerHTML = '<p style="color:var(--muted);font-size:.85rem;">هنوز نظری ثبت نشده.</p>'; return; }
@@ -1593,7 +1518,6 @@ async function submitReview(){
   showToast('نظر ثبت شد. بعد از تأیید ادمین نمایش داده می‌شه.', 'success');
 }
 
-/* ─── WISHLIST ─── */
 async function toggleWish(id){
   var i = wishlist.indexOf(id);
   if(!user){
@@ -1624,7 +1548,6 @@ function renderWishlist(){
   }).join('');
 }
 
-/* ─── CART ─── */
 function addToCart(id){
   var p = products.filter(function(x){ return x.id === id; })[0];
   if(!p) return;
@@ -1675,7 +1598,7 @@ function updateCart(){
 function renderCartItems(){
   var ids = Object.keys(cart);
   if(!ids.length){
-    $('cartItems').innerHTML = '<div class="empty-cart"><div class="big">🛍️</div><p>خالی</p></div>';
+    $('cartItems').innerHTML = '<div class="empty-cart"><div style="font-size:3rem;">🛍️</div><p>خالی</p></div>';
     return;
   }
   $('cartItems').innerHTML = ids.map(function(id){
@@ -1698,7 +1621,6 @@ function renderCartItems(){
 function openCart(){ $('cartPanel').classList.add('open'); $('overlay').classList.add('show'); }
 function closeCart(){ $('cartPanel').classList.remove('open'); $('overlay').classList.remove('show'); }
 
-/* ─── COUPON ─── */
 function isCouponValid(c, total){
   if(!c.active) return {ok: false, msg: 'کد غیرفعاله'};
   if(c.expire_date && new Date(c.expire_date) < new Date()) return {ok: false, msg: 'کد منقضی شده'};
@@ -1722,7 +1644,6 @@ function applyCoupon(){
   showToast('کد ' + c.percent + '٪ اعمال شد ✅', 'success');
 }
 
-/* ─── CHECKOUT ─── */
 async function checkout(){
   var ids = Object.keys(cart);
   if(!ids.length){ showToast('سبد خالی است', 'warning'); return; }
@@ -1776,7 +1697,6 @@ async function checkout(){
   showToast('سفارش ثبت شد ✅ کد: ' + String(o.id).slice(-8), 'success');
 }
 
-/* ─── TRACK ─── */
 function searchOrder(){
   var code = $('trackInput').value.trim().replace(/\D/g, '');
   if(!code){ $('trackMsg').textContent = 'کد را وارد کن.'; return; }
@@ -1807,7 +1727,6 @@ function renderOrderCard(o){
     '</div>';
 }
 
-/* ─── USER PANEL ─── */
 function renderAccount(){
   if(!user) return;
   var n = (userProfile && userProfile.name) || (user.email ? user.email.split('@')[0] : 'کاربر');
@@ -1900,7 +1819,6 @@ async function deleteAddress(id){
   await renderAddresses();
 }
 
-/* ─── ADMIN ─── */
 function loginAdmin(){
   if(!isAdmin()){ showToast('دسترسی ندارید', 'error'); go('home'); return; }
   if($('adminPass').value === adminPass){
@@ -1965,7 +1883,7 @@ function renderAdmin(){
   $('bannerUrl').value = banner.url || '';
   $('bannerText').value = banner.text || '';
   $('aiKey').value = aiCfg.key || '';
-  $('aiModel').value = aiCfg.model || 'gpt-4o-mini';
+  $('aiModel').value = aiCfg.model || 'gemini-2.0-flash';
   $('pexelsKeyInput').value = pexelsKey || '';
   $('sbUrl').value = supabaseCfg.url || '';
   $('sbKey').value = supabaseCfg.key || '';
@@ -2224,14 +2142,14 @@ function printInvoice(){
     return '<tr><td>' + esc(it.name) + '</td><td>' + fmt(it.qty) + '</td><td>' + fmt(it.price) + '</td><td>' + fmt(it.price * it.qty) + '</td></tr>';
   }).join('');
   var w = window.open('', '', 'width=800,height=600');
-  w.document.write('<!DOCTYPE html><html dir="rtl"><head><meta charset="UTF-8"><title>فاکتور سفارش</title><style>body{font-family:Tahoma;padding:30px}h1{color:#EA580C}table{width:100%;border-collapse:collapse;margin-top:20px}th,td{border:1px solid #ccc;padding:8px;text-align:right}th{background:#faf6f0}.totals{margin-top:20px;text-align:left;font-size:1.1rem}</style></head><body>' +
+  w.document.write('<!DOCTYPE html><html dir="rtl"><head><meta charset="UTF-8"><title>فاکتور</title><style>body{font-family:Tahoma;padding:30px}h1{color:#EA580C}table{width:100%;border-collapse:collapse;margin-top:20px}th,td{border:1px solid #ccc;padding:8px;text-align:right}th{background:#faf6f0}.totals{margin-top:20px;text-align:left;font-size:1.1rem}</style></head><body>' +
     '<h1>🌿 ' + esc(shopInfo.brand) + '</h1>' +
     '<p>' + esc(shopInfo.phone) + ' | ' + esc(shopInfo.email) + '</p>' +
     '<h3>فاکتور سفارش #' + String(o.id).slice(-8) + '</h3>' +
     '<p>تاریخ: ' + esc(o.date) + '</p>' +
     '<p>مشتری: ' + esc(o.user_name) + ' — ' + esc(o.phone || '') + '</p>' +
     '<p>آدرس: ' + esc(o.address || '') + '</p>' +
-    '<table><thead><tr><th>محصول</th><th>تعداد</th><th>قیمت واحد</th><th>جمع</th></tr></thead><tbody>' + items + '</tbody></table>' +
+    '<table><thead><tr><th>محصول</th><th>تعداد</th><th>قیمت</th><th>جمع</th></tr></thead><tbody>' + items + '</tbody></table>' +
     '<div class="totals">' +
     '<div>جمع کالاها: ' + fmt(o.subtotal || o.total) + ' ت</div>' +
     (o.discount ? '<div>تخفیف: ' + fmt(o.discount) + ' ت</div>' : '') +
@@ -2374,11 +2292,10 @@ async function deleteReview(id){
   renderAdmin();
 }
 
-/* ─── CSV ─── */
 function downloadSampleCSV(){
   var csv = 'name,price,discount_price,cat,stock,desc,image\n' +
-    'نان تست,35000,,مواد غذایی,20,نان تست تازه و نرم,\n' +
-    'شکلات تخته‌ای,30000,25000,خوراکی,50,شکلات تلخ عالی,\n';
+    'نان تست,35000,,مواد غذایی,20,نان تست تازه,\n' +
+    'شکلات تخته‌ای,30000,25000,خوراکی,50,شکلات تلخ,\n';
   var blob = new Blob(['\uFEFF' + csv], {type: 'text/csv;charset=utf-8;'});
   var url = URL.createObjectURL(blob);
   var a = document.createElement('a');
@@ -2488,14 +2405,83 @@ function exportOrdersCSV(){
   URL.revokeObjectURL(url);
 }
 
-/* ─── AI GENERATOR ─── */
+/* ═══════════════════════════════════════════════════════════
+   GOOGLE GEMINI AI
+   ═══════════════════════════════════════════════════════════ */
+async function callOpenAI(prompt){
+  var model = aiCfg.model || 'gemini-2.0-flash';
+  var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + aiCfg.key;
+  var res = await fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      contents: [{parts: [{text: 'تو یک دستیار فروشگاه آنلاین هستی. دقیق و به فارسی پاسخ بده. فقط JSON برگردون وقتی خواسته شد.\n\n' + prompt}]}],
+      generationConfig: {temperature: 0.7, maxOutputTokens: 800}
+    })
+  });
+  var data = await res.json();
+  if(data.error) throw new Error(data.error.message);
+  if(data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0]){
+    return data.candidates[0].content.parts[0].text;
+  }
+  throw new Error('پاسخ Gemini خالی');
+}
+
+async function callOpenAIWithImage(base64, prompt){
+  var model = aiCfg.model || 'gemini-2.0-flash';
+  var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + aiCfg.key;
+  var parts = [{text: prompt}];
+  if(base64 && base64.indexOf(',') > -1){
+    var meta = base64.split(',')[0];
+    var dataPart = base64.split(',')[1];
+    var mime = 'image/jpeg';
+    if(meta.indexOf('image/png') > -1) mime = 'image/png';
+    if(meta.indexOf('image/webp') > -1) mime = 'image/webp';
+    parts.push({inline_data: {mime_type: mime, data: dataPart}});
+  }
+  var res = await fetch(url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      contents: [{parts: parts}],
+      generationConfig: {temperature: 0.3, maxOutputTokens: 300}
+    })
+  });
+  var data = await res.json();
+  if(data.error) throw new Error(data.error.message);
+  if(data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0]){
+    return data.candidates[0].content.parts[0].text;
+  }
+  throw new Error('پاسخ Gemini خالی');
+}
+
+function fileToBase64(file){
+  return new Promise(function(res, rej){
+    var r = new FileReader();
+    r.onload = function(e){ res(e.target.result); };
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
+}
+
+async function searchPexelsImages(query){
+  if(!pexelsKey) return [];
+  try{
+    var url = 'https://api.pexels.com/v1/search?query=' + encodeURIComponent(query) + '&per_page=8&orientation=square';
+    var res = await fetch(url, {headers: {'Authorization': pexelsKey}});
+    if(!res.ok) return [];
+    var data = await res.json();
+    return (data.photos || []).map(function(p){ return p.src.large || p.src.medium; }).filter(Boolean);
+  }catch(e){ return []; }
+}
+
 async function aiGenerateProduct(){
   var name = $('aiProductName').value.trim();
   var imgFile = $('aiProductImage').files && $('aiProductImage').files[0];
   var st = $('aiGenStatus');
   var preview = $('aiGenPreview');
   if(!name && !imgFile){ showToast('اسم یا عکس محصول رو بذار', 'warning'); return; }
-  if(!aiCfg.key){ showToast('اول کلید OpenAI رو تنظیم کن', 'warning'); return; }
+  if(!aiCfg.key){ showToast('اول کلید Gemini رو تنظیم کن', 'warning'); return; }
   st.innerHTML = '🧠 در حال تحلیل محصول...';
   st.style.color = 'var(--primary)';
   preview.style.display = 'none';
@@ -2619,88 +2605,15 @@ function aiGenCancel(){
   var s = $('aiGenStatus'); if(s) s.textContent = '';
   var ss = $('aiGenSaveStatus'); if(ss) ss.textContent = '';
 }
-async function searchPexelsImages(query){
-  if(!pexelsKey) return [];
-  try{
-    var url = 'https://api.pexels.com/v1/search?query=' + encodeURIComponent(query) + '&per_page=8&orientation=square';
-    var res = await fetch(url, {headers: {'Authorization': pexelsKey}});
-    if(!res.ok) return [];
-    var data = await res.json();
-    return (data.photos || []).map(function(p){ return p.src.large || p.src.medium; }).filter(Boolean);
-  }catch(e){ return []; }
-}
-async function callOpenAI(prompt){
-async function callOpenAI(prompt){
-  var model = aiCfg.model || 'gemini-2.0-flash';
-  var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + aiCfg.key;
-  var res = await fetch(url, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({
-      contents: [{parts: [{text: 'تو یک دستیار فروشگاه آنلاین هستی. دقیق و به فارسی پاسخ بده. فقط JSON برگردون وقتی خواسته شد.\n\n' + prompt}]}],
-      generationConfig: {temperature: 0.7, maxOutputTokens: 800}
-    })
-  });
-  var data = await res.json();
-  if(data.error) throw new Error(data.error.message);
-  if(data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0]){
-    return data.candidates[0].content.parts[0].text;
-  }
-  throw new Error('پاسخ Gemini خالی');
-}
-  var data = await res.json();
-  if(data.error) throw new Error(data.error.message);
-  if(data.choices && data.choices[0]) return data.choices[0].message.content;
-  throw new Error('پاسخ خالی');
-}
-async function callOpenAIWithImage(base64, prompt){
-  var model = aiCfg.model || 'gemini-2.0-flash';
-  var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + aiCfg.key;
-  var parts = [{text: prompt}];
-  if(base64 && base64.indexOf(',') > -1){
-    var meta = base64.split(',')[0];
-    var dataPart = base64.split(',')[1];
-    var mime = 'image/jpeg';
-    if(meta.indexOf('image/png') > -1) mime = 'image/png';
-    if(meta.indexOf('image/webp') > -1) mime = 'image/webp';
-    parts.push({inline_data: {mime_type: mime, data: dataPart}});
-  }
-  var res = await fetch(url, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({
-      contents: [{parts: parts}],
-      generationConfig: {temperature: 0.3, maxOutputTokens: 300}
-    })
-  });
-  var data = await res.json();
-  if(data.error) throw new Error(data.error.message);
-  if(data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0]){
-    return data.candidates[0].content.parts[0].text;
-  }
-  throw new Error('پاسخ Gemini خالی');
-}
-  var data = await res.json();
-  if(data.error) throw new Error(data.error.message);
-  if(data.choices && data.choices[0]) return data.choices[0].message.content;
-  throw new Error('پاسخ خالی');
-}
-function fileToBase64(file){
-  return new Promise(function(res, rej){
-    var r = new FileReader();
-    r.onload = function(e){ res(e.target.result); };
-    r.onerror = rej;
-    r.readAsDataURL(file);
-  });
-}
 
-/* ─── URL SCRAPER ─── */
+/* ═══════════════════════════════════════════════════════════
+   URL SCRAPER
+   ═══════════════════════════════════════════════════════════ */
 async function fetchThroughProxy(url){
   var proxies = [
     function(u){ return 'https://r.jina.ai/' + u; },
     function(u){ return 'https://api.allorigins.win/get?url=' + encodeURIComponent(u); },
-    function(u){ return 'https://corsproxy.io/?' + encodeURIComponent(u); },
-    function(u){ return 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u); }
+    function(u){ return 'https://corsproxy.io/?' + encodeURIComponent(u); }
   ];
   var lastErr = '';
   for(var i=0; i<proxies.length; i++){
@@ -2780,7 +2693,7 @@ async function scrapeProductFromUrl(){
 async function aiScrapeFromUrl(){
   var url = $('scrapeUrl').value.trim();
   var st = $('scrapeStatus');
-  if(!aiCfg.key){ showToast('کلید OpenAI لازمه', 'warning'); return; }
+  if(!aiCfg.key){ showToast('کلید Gemini لازمه', 'warning'); return; }
   if(!url || url.indexOf('http') !== 0){ st.textContent = '❌ آدرس معتبر نیست'; st.style.color = 'var(--danger)'; return; }
   st.textContent = '🧠 استخراج با AI...'; st.style.color = 'var(--primary)';
   try{
@@ -2809,12 +2722,11 @@ async function aiScrapeFromUrl(){
   }
 }
 
-/* ─── SAVE SETTINGS ─── */
 function saveAI(){
   aiCfg = {key: $('aiKey').value.trim(), model: $('aiModel').value};
   saveLS('mehr_ai', aiCfg);
   $('aiStatus').textContent = '✅ ذخیره شد.';
-  showToast('کلید OpenAI ذخیره شد', 'success');
+  showToast('کلید Gemini ذخیره شد', 'success');
 }
 function savePexels(){
   pexelsKey = $('pexelsKeyInput').value.trim();
@@ -2830,7 +2742,6 @@ function saveSupabase(){
   showToast('Supabase ذخیره شد. صفحه را رفرش کن.', 'success');
 }
 
-/* ─── AUTH MODALS ─── */
 function openAuth(){
   if(user){ go('account'); return; }
   $('authModal').classList.add('open');
@@ -2883,7 +2794,6 @@ async function doRegister(){
   if(b){ b.disabled = false; b.textContent = 'ثبت‌نام'; }
 }
 
-/* ─── CONTACT ─── */
 function submitContact(){
   var n = $('contactName').value.trim();
   var e = $('contactEmail').value.trim();
@@ -2894,17 +2804,13 @@ function submitContact(){
   showToast('پیام ثبت شد ✅', 'success');
 }
 
-/* ─── SEARCH ─── */
 var searchTimeout;
 function handleSearchInput(e){
   clearTimeout(searchTimeout);
   searchTimeout = setTimeout(function(){
     searchQuery = e.target.value.trim();
-    if(searchQuery.length > 0){
-      showSearchSuggest(searchQuery);
-    } else {
-      hideSearchSuggest();
-    }
+    if(searchQuery.length > 0) showSearchSuggest(searchQuery);
+    else hideSearchSuggest();
     currentPage = 1;
     renderProducts();
     go('home');
@@ -2927,7 +2833,6 @@ function hideSearchSuggest(){
   if(s) s.classList.remove('open');
 }
 
-/* ─── CHAT ─── */
 function toggleChat(){
   $('chatBox').classList.toggle('open');
   if($('chatBox').classList.contains('open') && !$('chatBody').innerHTML){
@@ -2939,7 +2844,7 @@ function pushBot(t){
   $('chatBody').scrollTop = $('chatBody').scrollHeight;
 }
 function pushUser(t){ $('chatBody').innerHTML += '<div class="msg user">' + esc(t) + '</div>'; }
-async function sendChat(){
+
 async function sendChat(){
   var v = $('chatInput').value.trim();
   if(!v) return;
@@ -2955,6 +2860,7 @@ async function sendChat(){
   if(last && last.textContent === '...') last.remove();
   pushBot(r);
 }
+
 function localReply(t){
   var s = t.toLowerCase();
   if(s.indexOf('قیمت') > -1 || s.indexOf('چند') > -1){
@@ -2967,16 +2873,18 @@ function localReply(t){
   if(s.indexOf('پیگیری') > -1) return 'از فوتر → پیگیری سفارش، کد ۸ رقمی رو وارد کن';
   return 'می‌تونم درباره قیمت، دسته‌ها، ارسال و تماس کمکت کنم 🌿';
 }
+
 async function aiReply(t){
   try{
     if(!aiCfg.key) return null;
     var model = aiCfg.model || 'gemini-2.0-flash';
     var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + aiCfg.key;
+    var prods = products.slice(0, 10).map(function(p){ return p.name + ' - ' + fmt(getFinalPrice(p)) + ' تومان'; }).join('، ');
     var res = await fetch(url, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        contents: [{parts: [{text: 'تو دستیار فروشگاه ' + (shopInfo.brand || 'فروشگاه') + ' هستی. پاسخ کوتاه، گرم و به فارسی بده. اگر سوال درباره محصولی بود، از این لیست استفاده کن: ' + (products.slice(0, 10).map(function(p){return p.name + ' - ' + fmt(getFinalPrice(p)) + ' تومان';}).join('، ') || 'محصولی موجود نیست') + '\n\nسوال کاربر: ' + t}]}],
+        contents: [{parts: [{text: 'تو دستیار فروشگاه ' + (shopInfo.brand || 'فروشگاه') + ' هستی. پاسخ کوتاه، گرم و به فارسی بده. اگر سوال درباره محصولی بود، از این لیست استفاده کن: ' + (prods || 'محصولی موجود نیست') + '\n\nسوال کاربر: ' + t}]}],
         generationConfig: {temperature: 0.7, maxOutputTokens: 200}
       })
     });
@@ -2991,13 +2899,7 @@ async function aiReply(t){
     return null;
   }
 }
-    var d = await r.json();
-    if(d.choices && d.choices[0]) return d.choices[0].message.content;
-    return null;
-  }catch(e){ return null; }
-}
 
-/* ─── THEME ─── */
 function initTheme(){
   var s = loadLS('mehr_theme', null);
   var p = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -3023,22 +2925,18 @@ function applyTheme(t){
   }
 }
 
-/* ─── INIT ─── */
 async function init(){
   initTheme();
   initSupabase();
   notifications = loadLS('mehr_notifs', []);
   renderNotifDot();
-
   isLoading = true;
   renderSkeleton(8);
-
   if(dbConnected){
     await dbLoadAll();
     await checkSession();
   }
   isLoading = false;
-
   applyShopInfo();
   renderCategories();
   renderFooterCategories();
@@ -3060,7 +2958,6 @@ async function init(){
   $('filterMaxPrice').addEventListener('input', function(e){ filterMaxPrice = e.target.value; currentPage = 1; renderProducts(); });
 
   $('loadMoreBtn').onclick = loadMore;
-
   $('cartBtn').onclick = openCart;
   $('wishBtn').onclick = function(){ go('wish'); };
   $('notifBtn').onclick = toggleNotifs;
@@ -3085,7 +2982,6 @@ async function init(){
 
 init();
 
-/* ─── EXPOSE GLOBALS ─── */
 window.go = go;
 window.setCat = setCat;
 window.scrollToProducts = scrollToProducts;
@@ -3165,5 +3061,3 @@ window.updateWishCount = updateWishCount;
 window.renderProducts = renderProducts;
 window.renderAdmin = renderAdmin;
 </script>
-</body>
-</html>
