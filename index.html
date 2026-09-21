@@ -2624,7 +2624,7 @@ async function searchPexelsImages(query){
   }catch(e){ return []; }
 }
 async function callOpenAI(prompt){
-  var res = await fetch('https://api.openai.com/v1/chat/completions', {
+  var res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key},
     body: JSON.stringify({
@@ -2643,7 +2643,7 @@ async function callOpenAI(prompt){
   throw new Error('پاسخ خالی');
 }
 async function callOpenAIWithImage(base64, prompt){
-  var res = await fetch('https://api.openai.com/v1/chat/completions', {
+  var res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key},
     body: JSON.stringify({
@@ -2940,7 +2940,7 @@ function localReply(t){
 }
 async function aiReply(t){
   try{
-    var r = await fetch('https://api.openai.com/v1/chat/completions', {
+    var r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key},
       body: JSON.stringify({
