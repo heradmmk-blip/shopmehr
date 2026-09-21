@@ -2940,15 +2940,19 @@ function pushBot(t){
 }
 function pushUser(t){ $('chatBody').innerHTML += '<div class="msg user">' + esc(t) + '</div>'; }
 async function sendChat(){
+async function sendChat(){
   var v = $('chatInput').value.trim();
   if(!v) return;
   pushUser(v);
   $('chatInput').value = '';
-  var r = localReply(v);
+  pushBot('...');
+  var r = null;
   if(aiCfg.key){
-    var ai = await aiReply(v);
-    if(ai) r = ai;
+    try{ r = await aiReply(v); }catch(e){ r = null; }
   }
+  if(!r) r = localReply(v);
+  var last = $('chatBody').lastElementChild;
+  if(last && last.textContent === '...') last.remove();
   pushBot(r);
 }
 function localReply(t){
@@ -2965,15 +2969,28 @@ function localReply(t){
 }
 async function aiReply(t){
   try{
-    var r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    if(!aiCfg.key) return null;
+    var model = aiCfg.model || 'gemini-2.0-flash';
+    var url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + aiCfg.key;
+    var res = await fetch(url, {
       method: 'POST',
-      headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + aiCfg.key, 'HTTP-Referer': window.location.origin, 'X-Title': 'Larmarket'},
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        model: aiCfg.model || 'gpt-4o-mini',
-        messages: [{role: 'system', content: 'دستیار فروشگاه ' + shopInfo.brand + '. پاسخ کوتاه و گرم فارسی.'}, {role: 'user', content: t}],
-        max_tokens: 200, temperature: 0.7
+        contents: [{parts: [{text: 'تو دستیار فروشگاه ' + (shopInfo.brand || 'فروشگاه') + ' هستی. پاسخ کوتاه، گرم و به فارسی بده. اگر سوال درباره محصولی بود، از این لیست استفاده کن: ' + (products.slice(0, 10).map(function(p){return p.name + ' - ' + fmt(getFinalPrice(p)) + ' تومان';}).join('، ') || 'محصولی موجود نیست') + '\n\nسوال کاربر: ' + t}]}],
+        generationConfig: {temperature: 0.7, maxOutputTokens: 200}
       })
     });
+    var data = await res.json();
+    if(data.error){ console.warn('Gemini error:', data.error); return null; }
+    if(data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0]){
+      return data.candidates[0].content.parts[0].text;
+    }
+    return null;
+  }catch(e){
+    console.warn('aiReply failed:', e);
+    return null;
+  }
+}
     var d = await r.json();
     if(d.choices && d.choices[0]) return d.choices[0].message.content;
     return null;
