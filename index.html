@@ -829,7 +829,7 @@ var wishlist = [];
 var user = null, userProfile = null;
 var adminAuth = sessionStorage.getItem('mehr_admin') === '1';
 var adminPass = loadLS('mehr_adminpass', CONFIG.defaultAdminPass);
-var aiCfg = loadLS('mehr_ai', {key:'', model:'gpt-4o-mini'});
+var aiCfg = loadLS('mehr_ai', {key:'', model:'google/gemini-flash-1.5:free'});
 var pexelsKey = loadLS('mehr_pexels', '');
 var shipCfg = loadLS('mehr_shipping', {cost: CONFIG.defaultShipCost, freeOver: CONFIG.defaultFreeShipOver});
 var banner = loadLS('mehr_banner', {url:'🌿', text:''});
